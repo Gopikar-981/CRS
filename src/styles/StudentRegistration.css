@@ -1,0 +1,152 @@
+body {
+  background: #f4f6f9;
+}
+
+.reg-container {
+  max-width: 1100px;
+  margin: 30px auto;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* HEADER */
+.reg-header {
+  background: linear-gradient(90deg, #1d4ed8, #2563eb);
+  color: white;
+  padding: 20px 30px;
+  font-size: 20px;
+}
+
+.reg-header p {
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* STEPS */
+.reg-steps {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.reg-steps span {
+  padding-bottom: 5px;
+}
+
+.reg-steps .active {
+  color: #2563eb;
+  font-weight: 600;
+  border-bottom: 2px solid #2563eb;
+}
+
+/* CARD */
+.reg-card {
+  padding: 30px;
+}
+
+h3 {
+  color: #2563eb;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* BUTTONS */
+.btn-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.prev {
+  background: #6b7280;
+  color: white;
+}
+
+.next {
+  background: #2563eb;
+  color: white;
+}
+
+.register {
+  background: #16a34a;
+  color: white;
+}
+
+.reset {
+  background: #9ca3af;
+  color: white;
+}
+
+/* DISCLAIMER FIX */
+.disclaimer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.disclaimer-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 15px;
+}
+
+.disclaimer-row input {
+  width: 18px;
+  height: 18px;
+}
+
+/* CAPTCHA */
+.captcha-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.captcha-text {
+  padding: 10px 18px;
+  background: #e5e7eb;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+}
