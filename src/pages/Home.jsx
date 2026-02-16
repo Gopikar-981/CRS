@@ -14,29 +14,31 @@ function Home() {
 
       {/* LOGIN CARDS */}
       <div className="card-container">
-        <div className="card">
+
+        <div className="card1">
           <h3>Admin</h3>
           <p>Manage wardens, students & system</p>
-          <Link to="/login" className="btn">Login</Link>
+           <Link to="/admin/login" className="btn">Login</Link>
         </div>
 
-        <div className="card">
+        <div className="card1">
           <h3>Executive Warden</h3>
           <p>Allocate rooms & manage hostel</p>
-          <Link to="/login" className="btn">Login</Link>
+          <Link to="/executive/login" className="btn">Login</Link>
         </div>
 
-        <div className="card">
+        <div className="card1">
           <h3>Local Warden</h3>
           <p>Attendance & student monitoring</p>
-          <Link to="/login" className="btn">Login</Link>
+           <Link to="/admin/login" className="btn">Login</Link>
         </div>
 
-        <div className="card">
+        <div className="card1">
           <h3>Student</h3>
           <p>Room, fee & leave management</p>
-          <Link to="/student-login" className="btn">Login</Link>
+           <Link to="/student-login" className="btn">Login</Link>
         </div>
+
       </div>
     </>
   );

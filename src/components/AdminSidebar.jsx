@@ -1,18 +1,22 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import "../styles/AdminSidebar.css";
 
 function AdminSidebar() {
   return (
-    <div className="sidebar">
-      <h2>ADMIN</h2>
-      <Link to="/admin/dashboard">Dashboard</Link>
-      <Link to="/admin/students">Students</Link>
-      <Link to="/admin/wardens">Wardens</Link>
-      <Link to="/admin/allocate-warden">Allocate Warden</Link>
-      <Link to="/admin/complaints">Complaints</Link>
-      <Link to="/admin/fees">Fee Status</Link>
-      <Link to="/admin/food-menu">Food Menu</Link>
-      <Link to="/admin/announcements">Announcements</Link>
-      <Link to="/admin/control-login">Control Login</Link>
+    <div className="admin-sidebar">
+      <h2 className="logo">Admin</h2>
+
+      <nav>
+        <NavLink to="/admin/dashboard">Dashboard</NavLink>
+        <NavLink to="/admin/allocate-warden">Allocate Warden</NavLink>
+        <NavLink to="/admin/view-wardens">View Wardens</NavLink>
+        <NavLink to="/admin/view-students">View Students</NavLink>
+        <NavLink to="/admin/control-login">Control Login</NavLink>
+        <NavLink to="/admin/food-menu">Food Menu</NavLink>
+        <NavLink to="/admin/complaints">Complaints</NavLink>
+        <NavLink to="/admin/fee-status">Fee Status</NavLink>
+        <NavLink to="/admin/announcements">Announcements</NavLink>
+      </nav>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "../styles/Login.css";
+import "../../styles/Login.css";
 
 function StudentLogin() {
   const [captcha, setCaptcha] = useState("");

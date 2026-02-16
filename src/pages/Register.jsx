@@ -33,33 +33,92 @@ function Register() {
         {step === 1 && (
           <>
             <h3>Basic Details</h3>
+
             <div className="grid">
               <input placeholder="Student Name" />
-              <input placeholder="Aadhaar No" />
+              <input placeholder="Register Number" />
+              <input placeholder="Aadhaar Number" />
+
               <input placeholder="Email ID" />
-              <input placeholder="Confirm Email ID" />
-              <input placeholder="Mobile No" />
+              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Confirm Password" />
+
+              <input placeholder="Mobile Number" />
               <input type="date" />
+              <input placeholder="Age" />
+
               <select>
-                <option>Gender</option>
+                <option value="">Gender</option>
                 <option>Male</option>
                 <option>Female</option>
                 <option>Transgender</option>
               </select>
+
               <select>
-                <option>Blood Group</option>
+                <option value="">Blood Group</option>
                 <option>A+</option>
+                <option>A-</option>
                 <option>B+</option>
+                <option>B-</option>
                 <option>O+</option>
+                <option>O-</option>
                 <option>AB+</option>
+                <option>AB-</option>
               </select>
+
+              <select>
+                <option value="">Religion</option>
+                <option>Hindu</option>
+                <option>Christian</option>
+                <option>Muslim</option>
+                <option>Others</option>
+              </select>
+
+              <select>
+                <option value="">Community</option>
+                <option>OC</option>
+                <option>BC</option>
+                <option>MBC</option>
+                <option>SC</option>
+                <option>ST</option>
+              </select>
+
+              <input placeholder="Caste" />
+              <input placeholder="WhatsApp Number" />
+              <input placeholder="Nationality" />
+
+              <select>
+                <option value="">First Graduate</option>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+
+              <input placeholder="Mother Tongue" />
+              <input placeholder="Other Language Known" />
+
+              <select>
+                <option value="">Disability</option>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+
+              <input placeholder="Hobbies" />
+
+              <select>
+                <option value="">Allergic to any medicine?</option>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+
+              <input placeholder="If yes, specify medicine" />
             </div>
 
             <h4>Guardian Information</h4>
+
             <table>
               <thead>
                 <tr>
-                  <th></th>
+                  <th>Relation</th>
                   <th>Name</th>
                   <th>Contact</th>
                 </tr>
@@ -67,18 +126,18 @@ function Register() {
               <tbody>
                 <tr>
                   <td>Local Guardian</td>
-                  <td><input /></td>
-                  <td><input /></td>
+                  <td><input placeholder="Guardian Name" /></td>
+                  <td><input placeholder="Contact Number" /></td>
                 </tr>
                 <tr>
                   <td>Father</td>
-                  <td><input /></td>
-                  <td><input /></td>
+                  <td><input placeholder="Father Name" /></td>
+                  <td><input placeholder="Contact Number" /></td>
                 </tr>
                 <tr>
                   <td>Mother</td>
-                  <td><input /></td>
-                  <td><input /></td>
+                  <td><input placeholder="Mother Name" /></td>
+                  <td><input placeholder="Contact Number" /></td>
                 </tr>
               </tbody>
             </table>

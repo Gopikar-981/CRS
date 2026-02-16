@@ -1,0 +1,22 @@
+.status.paid {
+  color: green;
+  font-weight: bold;
+}
+
+.status.unpaid {
+  color: red;
+  font-weight: bold;
+}
+
+.mark-paid-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mark-paid-btn:hover {
+  background-color: #218838;
+}

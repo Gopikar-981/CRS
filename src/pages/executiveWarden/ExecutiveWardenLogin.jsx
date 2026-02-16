@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "../../styles/Login.css";
 
-function AdminLogin() {
+function ExecutiveWardenLogin() {
   const [captcha, setCaptcha] = useState("");
   const [captchaInput, setCaptchaInput] = useState("");
   const [error, setError] = useState("");
@@ -37,38 +37,38 @@ function AdminLogin() {
       return;
     }
 
-    // ✅ Dummy admin data
-    const adminData = {
-      name: "Admin",
+    const executiveData = {
+      name: "Executive Warden",
       email: email,
-      role: "Administrator"
+      role: "ExecutiveWarden"
     };
 
-    localStorage.setItem("admin", JSON.stringify(adminData));
+    localStorage.setItem(
+      "executiveWarden",
+      JSON.stringify(executiveData)
+    );
 
-    // ✅ Redirect to admin dashboard
-    navigate("/admin/dashboard");
+    navigate("/executive/dashboard");
   };
 
   return (
     <div className="login-container">
-      
       <div className="login-left">
         <div className="overlay">
           <h1>Campus Residence System</h1>
-          <p>Smart Hostel Management Solution</p>
+          <p>Executive Warden Panel</p>
         </div>
       </div>
 
       <div className="login-right">
         <div className="login-box">
-          <h2>Admin Login</h2>
+          <h2>Executive Warden Login</h2>
 
           <label>Email ID</label>
           <input
             type="email"
             value={email}
-            placeholder="Enter admin email"
+            placeholder="Enter warden email"
             onChange={(e) => setEmail(e.target.value)}
           />
 
@@ -79,6 +79,10 @@ function AdminLogin() {
             placeholder="Enter password"
             onChange={(e) => setPassword(e.target.value)}
           />
+
+          <div className="forgot-password">
+            <Link to="/forgot-password">Forgot Password?</Link>
+          </div>
 
           <div className="captcha-row">
             <div className="captcha-text">{captcha}</div>
@@ -105,9 +109,8 @@ function AdminLogin() {
           </button>
         </div>
       </div>
-
     </div>
   );
 }
 
-export default AdminLogin;
+export default ExecutiveWardenLogin;

@@ -1,4 +1,4 @@
-import "../styles/StudentDashBoard.css";
+import "../styles/StudentDashboard.css";
 
 function Topbar({ name }) {
   return (

@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Sidebar from "../../components/Sidebar";
 import Topbar from "../../components/Topbar";
 import "../../styles/PayFee.css";
 
 function PayFee() {
-  const [paid, setPaid] = useState(false);
+  const navigate = useNavigate();
 
   const feeDetails = {
     hostelFee: 25000,
@@ -18,15 +18,14 @@ function PayFee() {
     feeDetails.maintenanceFee;
 
   const handlePayment = () => {
-    setPaid(true);
-    alert("✅ Fee Payment Successful");
+    navigate("/student/bank-payment");   // ✅ correct route
   };
 
   return (
     <div className="dashboard-container">
       <Sidebar />
 
-      <div className="main-content">
+      <div className="main-content1">
         <Topbar title="Fee Payment" />
 
         <div className="content">
@@ -57,18 +56,11 @@ function PayFee() {
               </tbody>
             </table>
 
-            <div className="payment-status">
-              Status :
-              <span className={paid ? "paid" : "pending"}>
-                {paid ? " Paid" : " Pending"}
-              </span>
-            </div>
+            {/* ✅ PAY BUTTON ONLY */}
+            <button className="pay-btn" onClick={handlePayment}>
+              Pay Now
+            </button>
 
-            {!paid && (
-              <button className="pay-btn" onClick={handlePayment}>
-                Pay Now
-              </button>
-            )}
           </div>
         </div>
       </div>
