@@ -19,6 +19,43 @@
   box-sizing: border-box;
   box-shadow: 3px 0 12px rgba(0,0,0,0.15);
 }
+.executive-sidebar {
+  width: 240px;
+  height: 100vh;
+  background: linear-gradient(180deg, #0f172a, #da370f);
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.executive-sidebar .logo {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.executive-sidebar a {
+  color: #cbd5e1;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.executive-sidebar a:hover {
+  background: #334155;
+  color: white;
+}
+
+.executive-sidebar a.active {
+  background: #2563eb;
+  color: white;
+}
 
 .sidebar .logo {
   margin-bottom: 30px;
@@ -81,6 +118,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  margin-left: 240px;
 }
 
 /* ===============================
@@ -88,7 +126,7 @@
 ================================ */
 .topbar {
   height: 65px;
-  background: linear-gradient(90deg, #3d332a, #4b4035);
+  background: linear-gradient(90deg, #0f172a, #da370f);
   color: white;
   display: flex;
   justify-content: space-between;

@@ -31,10 +31,10 @@ function ViewWardens() {
     <div style={{ display: "flex", minHeight: "100vh" }}>
       <ExecutiveSidebar />
 
-      <div style={{ flex: 1, background: "#f5f7fb" }}>
+      <div style={{ flex: 1, background: "#f5f7fb",marginLeft:240 }}>
         <Topbar title="View Local Wardens" />
 
-        <div className="ew-container">
+        <div className="ew-container" >
           <h2>Local Wardens List</h2>
 
           <table className="ew-table">

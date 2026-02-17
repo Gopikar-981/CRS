@@ -30,7 +30,7 @@ function Home() {
         <div className="card1">
           <h3>Local Warden</h3>
           <p>Attendance & student monitoring</p>
-           <Link to="/admin/login" className="btn">Login</Link>
+           <Link to="/warden/login" className="btn">Login</Link>
         </div>
 
         <div className="card1">

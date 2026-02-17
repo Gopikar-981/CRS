@@ -28,7 +28,7 @@ function ViewStudentsEW() {
     <div className="executive-layout">
       <ExecutiveSidebar />
 
-      <div className="executive-main">
+      <div className="executive-main" style={{ flex: 1, background: "#f5f7fb",marginLeft:220, }}>
         <Topbar title="Students" />
 
         <div className="dashboard-content">

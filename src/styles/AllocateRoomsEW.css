@@ -69,3 +69,41 @@
     grid-template-columns: 1fr;
   }
 }
+.table-wrapper {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th {
+  background: #1e40af;
+  color: white;
+  padding: 12px;
+}
+
+.data-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.status.pending {
+  color: orange;
+  font-weight: bold;
+}
+
+.status.approved {
+  color: green;
+  font-weight: bold;
+}
+
+.status.rejected {
+  color: red;
+  font-weight: bold;
+}

@@ -63,7 +63,7 @@ function ViewComplaints() {
           <div className="table-card">
             <table className="complaint-table">
               <thead>
-                <tr>
+                <tr >
                   <th>Student</th>
                   <th>Reg No</th>
                   <th>Hostel</th>

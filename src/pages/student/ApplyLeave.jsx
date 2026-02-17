@@ -53,7 +53,7 @@ function ApplyLeave() {
     <div className="dashboard-container">
       <Sidebar />
 
-      <div className="main-content1">
+      <div className="main-content2">
         <Topbar title="Apply Leave" />
 
         <div className="content">

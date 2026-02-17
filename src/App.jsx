@@ -15,7 +15,7 @@ import PayFee from "./pages/student/PayFee";
 import DummyBankPayment from "./pages/student/DummyBankPayment";
 import RaiseComplaint from "./pages/student/RaiseComplaint";
 import ApplyLeave from "./pages/student/ApplyLeave";
-
+import LeaveStatus from "./pages/student/LeaveStatus";
 /* Admin */
 import AdminLogin from "./pages/admin/AdminLogin";
 import AdminDashboard from "./pages/admin/AdminDashboard";
@@ -27,6 +27,7 @@ import FoodMenu from "./pages/admin/FoodMenu";
 import ViewComplaints from "./pages/admin/ViewComplaints";
 import FeeStatus from "./pages/admin/FeeStatus";
 import Announcements from "./pages/admin/Announcements";
+import AdminViewAnnouncements from "./pages/admin/AdminViewAnnouncements";
 
 /* Executive */
 import ExecutiveWardenLogin from "./pages/executiveWarden/ExecutiveWardenLogin";
@@ -39,6 +40,21 @@ import ViewWardensEW from "./pages/executiveWarden/ViewWardens";
 import ViewStudentsEW from "./pages/executiveWarden/ViewStudents";
 import FeeStatusEW from "./pages/executiveWarden/FeeStatus";
 import AllocateRoomsEW from "./pages/executiveWarden/AllocateRooms";
+
+/* Warden */
+import WardenLogin from "./pages/warden/WardenLogin";
+import WardenDashboard from "./pages/warden/WardenDashboard";
+import LeaveRequests from "./pages/warden/LeaveRequests";
+import ViewComplaintsLW from "./pages/warden/ViewComplaintsLW";
+import AttendanceLW from "./pages/warden/AttendanceLW";
+import Sanitization from "./pages/warden/Sanitization";
+import ViewAttendance from "./pages/warden/ViewAttendance";
+import ViewMenuLW from "./pages/warden/ViewMenuLW";
+import ViewAnnouncements from "./pages/warden/ViewAnnouncements";
+import SendAnnouncements from "./pages/warden/SendAnnouncements";
+import OutEntry from "./pages/warden/OutEntry";
+import InEntry from "./pages/warden/InEntry";
+
 
 function App() {
   return (
@@ -56,7 +72,7 @@ function App() {
       <Route path="/student/bank-payment" element={<DummyBankPayment />} />
       <Route path="/student/complaint" element={<RaiseComplaint />} />
       <Route path="/student/leave" element={<ApplyLeave />} />
-
+      <Route path="/student/leave-status" element={<LeaveStatus />} />
       {/* Admin */}
       <Route path="/admin/login" element={<AdminLogin />} />
       <Route path="/admin/dashboard" element={<AdminDashboard />} />
@@ -68,7 +84,7 @@ function App() {
       <Route path="/admin/complaints" element={<ViewComplaints />} />
       <Route path="/admin/fee-status" element={<FeeStatus />} />
       <Route path="/admin/announcements" element={<Announcements />} />
-
+      <Route path="/admin/view-announcements" element={<AdminViewAnnouncements />} />
       {/* Executive */}
       <Route path="/executive/login" element={<ExecutiveWardenLogin />} />
       <Route path="/executive/dashboard" element={<ExecutiveDashboard />} />
@@ -80,6 +96,19 @@ function App() {
       <Route path="/executive/view-students" element={<ViewStudentsEW />} />
       <Route path="/executive/fee-status" element={<FeeStatusEW />} />
       <Route path="/executive/allocate-rooms" element={<AllocateRoomsEW />} />
+         {/* WARDEN LOGIN */}
+      <Route path="/warden/login" element={<WardenLogin />} />
+      <Route path="/warden/dashboard" element={<WardenDashboard />} />
+       <Route path="/warden/leave" element={<LeaveRequests />} />
+      <Route path="/warden/view-complaints" element={<ViewComplaintsLW />} />
+      <Route path="/warden/attendance" element={<AttendanceLW />} />
+      <Route path="/warden/sanitization" element={<Sanitization />} />
+      <Route path="/warden/view-attendance" element={<ViewAttendance />} />
+      <Route path="/warden/view-menu" element={<ViewMenuLW />} />
+      <Route path="/warden/view-announcements" element={<ViewAnnouncements />} />
+      <Route path="/warden/send-announcements" element={<SendAnnouncements />} />
+      <Route path="/warden/outentry" element={<OutEntry />} />
+      <Route path="/warden/inentry" element={<InEntry />} />
 
       {/* Common */}
       <Route path="/forgot-password" element={<ForgotPassword />} />

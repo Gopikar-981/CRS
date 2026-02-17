@@ -3,7 +3,7 @@ import "../styles/ExecutiveWarden.css";
 
 function ExecutiveSidebar() {
   return (
-    <div className="sidebar">
+    <div className="executive-sidebar">
       <h2 className="logo">Executive Warden</h2>
 
       <NavLink to="/executive/dashboard">Dashboard</NavLink>

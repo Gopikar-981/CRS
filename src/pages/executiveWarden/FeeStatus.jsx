@@ -8,7 +8,7 @@ function FeeStatus() {
     <div className="executive-layout">
       <ExecutiveSidebar />
 
-      <div className="executive-main">
+      <div className="executive-main" style={{ flex: 1, background: "#f5f7fb",marginLeft:220 }}>
         <Topbar title="Fee Status" />
 
         <div className="dashboard-content">

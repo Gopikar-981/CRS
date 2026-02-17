@@ -8,7 +8,7 @@ function AllocateRooms() {
     <div className="executive-layout">
       <ExecutiveSidebar />
 
-      <div className="executive-main">
+      <div className="executive-main" style={{  background: "#f5f7fb",marginLeft:220 }}>
         <Topbar title="Allocate Rooms" />
 
         <div className="dashboard-content">

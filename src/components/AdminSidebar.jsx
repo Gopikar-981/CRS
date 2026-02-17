@@ -15,7 +15,8 @@ function AdminSidebar() {
         <NavLink to="/admin/food-menu">Food Menu</NavLink>
         <NavLink to="/admin/complaints">Complaints</NavLink>
         <NavLink to="/admin/fee-status">Fee Status</NavLink>
-        <NavLink to="/admin/announcements">Announcements</NavLink>
+        <NavLink to="/admin/announcements">Send Announcements</NavLink>
+        <NavLink to="/admin/view-announcements">View Announcements</NavLink>
       </nav>
     </div>
   );

@@ -21,7 +21,7 @@ function StudentDashboard() {
     <div className="dashboard-container">
       <Sidebar />
 
-      <div className="main-content1">
+      <div className="main-content2">
         <Topbar name={student.name} />
 
         <div className="content">
